@@ -5,7 +5,7 @@ import manVirtual2 from './img/manVirtual2.png'
 const Content = () => {
   return (
     <div className='content'>
-      Content
+     
     </div>
   )
 }

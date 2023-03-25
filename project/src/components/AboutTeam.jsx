@@ -7,7 +7,7 @@ import Afroza from './img/Afroza.jpg'
 const AboutTeam = () => {
   return (
     <div className='aboutTeam'>
-      AboutTeam
+      
     </div>
   )
 }

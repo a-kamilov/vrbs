@@ -1,10 +1,56 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.App{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Rubik:ital,wght@0,500;1,500&display=swap");
+
+.App {
+  max-width: 1440px;
+  width: 100%;
   border: 2px solid red;
-  
+  // background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02% );
+  background: #12192c;
+  padding: 35px 135px;
+  margin: auto;
+
+  & > .header {
+    & > .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      & > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: "Rubik", sans-serif;
+        & > img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+      }
+
+      & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        & > li {
+          & > a {
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            color: white;
+            margin-right: 60px;
+          }
+        }
+      }
+    }
+  }
 }

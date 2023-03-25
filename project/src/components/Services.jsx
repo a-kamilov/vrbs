@@ -10,7 +10,7 @@ import icon6 from './img/mpn.png'
 const Services = () => {
   return (
     <div className='services'> 
-      Services
+      
     </div>
   )
 }
