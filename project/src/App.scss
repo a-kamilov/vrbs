@@ -87,7 +87,7 @@
         font-family: "DM Sans", sans-serif;
         font-size: 16px;
         margin-bottom: 200px;
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
         &:nth-child(3) {
@@ -190,44 +190,111 @@
     }
   }
 
-  &>.content{
+  & > .content {
     margin-top: 110px;
-    &>.top{
+    & > .top {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      &>img{
+      & > img {
         width: 588px;
         height: 588px;
       }
-      &>.t_content{
+      & > .t_content {
         color: white;
         font-family: "DM Sans", sans-serif;
-        &>p{
-          &:nth-child(1){
+        & > p {
+          &:nth-child(1) {
             font-size: 42px;
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             font-size: 16px;
             margin: 30px 0;
           }
         }
-        &>button{
+        & > button {
           width: 100px;
           height: 31px;
-          background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+          background: linear-gradient(90.35deg, #2563eb 0.36%, #d946ef 201.02%);
           outline: none;
           border: none;
           color: white;
           border-radius: 4px;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
+  }
 
-
+  & > .aboutTeam {
+    margin-top: 100px;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    & > h1 {
+      font-size: 42px;
+    }
+    & > p {
+      width: 44%;
+      margin: 25px auto;
+    }
+    & > .workers {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 10px;
+      & > .worker {
+        border-radius: 34px;
+        width: 270px;
+        height: 266px;
+        background: linear-gradient(
+            97.12deg,
+            rgba(255, 255, 255, 0.08) -3.52%,
+            rgba(255, 255, 255, 0.07) 100.35%
+          ),
+          linear-gradient(
+            268.12deg,
+            rgba(254, 254, 255, 0.032) -11.04%,
+            rgba(255, 255, 255, 0.018) 104.89%
+          );
+        padding: 30px 45px;
+        & > img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+        }
+        & > h3 {
+          margin: 10px 0 7px;
+          font-size: 28px;
+          line-height: 36px;
+        }
+        & > p {
+          font-size: 14px;
+          letter-spacing: 3%;
+          text-transform: uppercase;
+        }
+        & > .icons {
+          margin-top: 12px;
+          & > a {
+            & > i {
+              margin: 0 6px;
+              color: #3fa4f1;
+              font-size: 18px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   
+
+
 
 }
