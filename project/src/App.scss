@@ -17,7 +17,7 @@
   margin: auto;
 
   & > .header {
-    height: 1200px;
+    position: relative;
     & > .navbar {
       display: flex;
       flex-direction: row;
@@ -64,10 +64,10 @@
         }
       }
     }
-
     & > .content {
+      font-family: "DM Sans", sans-serif;
+      width: 47%;
       & > h1 {
-        font-family: "DM Sans", sans-serif;
         font-weight: 700;
         font-size: 58px;
         line-height: 84px;
@@ -75,10 +75,159 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        // text-fill-color: transparent;
-
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+      }
+      & > p {
+        margin: 25px 0 30px;
+        font-size: 15px;
+        color: #e5e7eb;
+        line-height: 30px;
+      }
+      & > button {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        margin-bottom: 200px;
+        &:hover{
+          cursor: pointer;
+        }
+        &:nth-child(3) {
+          background: linear-gradient(90.35deg, #2563eb 0.36%, #d946ef 201.02%);
+          color: white;
+          outline: none;
+          border: none;
+          width: 135px;
+          height: 60px;
+          border-radius: 6px;
+        }
+        &:nth-child(4) {
+          color: white;
+          background: transparent;
+          border: none;
+          outline: none;
+          margin-left: 30px;
+          & > i {
+            font-size: 27px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    & > img {
+      position: absolute;
+      right: -100px;
+      top: 0;
+      width: 680px;
+      height: 650px;
+    }
+  }
+
+  & > .services {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 125px;
+    & > h1 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 55px;
+    }
+    & > p {
+      width: 48%;
+      margin: auto;
+      margin-top: 25px;
+    }
+    & > .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+      & > .card {
+        border-radius: 36px;
+        width: 366px;
+        height: 336px;
+        padding: 35px 20px;
+        margin: 20px 10px;
+        background: linear-gradient(
+            97.12deg,
+            rgba(255, 255, 255, 0.08) -3.52%,
+            rgba(255, 255, 255, 0.07) 100.35%
+          ),
+          linear-gradient(
+            268.12deg,
+            rgba(254, 254, 255, 0.032) -11.04%,
+            rgba(255, 255, 255, 0.018) 104.89%
+          );
+        &:hover {
+          transition: ease-in-out 700ms;
+          transform: scale(1.05);
+        }
+        & > img {
+          border-radius: 50%;
+          width: 74px;
+          height: 74px;
+        }
+        & > h2 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 32px;
+          margin: 16px 0 18px;
+        }
+        & > p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          margin-bottom: 20px;
+        }
+        & > a {
+          font-size: 16px;
+          line-height: 26px;
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
+
+  &>.content{
+    margin-top: 110px;
+    &>.top{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &>img{
+        width: 588px;
+        height: 588px;
+      }
+      &>.t_content{
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        &>p{
+          &:nth-child(1){
+            font-size: 42px;
+          }
+          &:nth-child(2){
+            font-size: 16px;
+            margin: 30px 0;
+          }
+        }
+        &>button{
+          width: 100px;
+          height: 31px;
+          background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+          outline: none;
+          border: none;
+          color: white;
+          border-radius: 4px;
+        }
+      }
+    }
+
+
+  }
+
+  
+
 }
